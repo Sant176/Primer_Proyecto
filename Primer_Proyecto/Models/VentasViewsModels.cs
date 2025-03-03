@@ -26,6 +26,7 @@ namespace WebEmpresa.Models // Define el espacio de nombres para la aplicación 
 
         // Lista que contiene los detalles de la venta, inicializada como una nueva lista
         // Asegúrate de que esta lista esté preparada para recibir múltiples detalles
+        [NotMapped]
         public List<DetalleVentaViewModel> Detalles { get; set; } = new List<DetalleVentaViewModel>();
     }
 

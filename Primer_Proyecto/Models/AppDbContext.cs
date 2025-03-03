@@ -15,6 +15,8 @@ public class AppDbContext : DbContext
         modelBuilder.Entity<DetalleVentaViewModel>().HasNoKey();
     }
 
+public DbSet<WebEmpresa.Models.VentasViewModel> VentasViewModel { get; set; } = default!;
+
 
 }
 
